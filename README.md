@@ -10,12 +10,12 @@ Satoja is a marketplace for preordering local produce sold at local events.
 
 ### Mobile
 
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655486784/satoja_1_k1vm4z.png)
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655489073/satoja_2_jqik4x.png)
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655489069/satoja_3_ru4zhb.png)
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655489071/satoja_4_k3vujp.png)
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655489070/satoja_5_br2prr.png)
-![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_270/v1655489071/satoja_6_slz0dr.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655486784/satoja_1_k1vm4z.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655489073/satoja_2_jqik4x.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655489069/satoja_3_ru4zhb.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655489071/satoja_4_k3vujp.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655489070/satoja_5_br2prr.png)
+![](https://res.cloudinary.com/ninaw/image/upload/c_scale,w_285/v1655489071/satoja_6_slz0dr.png)
 ![](https://res.cloudinary.com/ninaw/image/upload/v1655489071/satoja_7_mv97x4.png)
 ![](https://res.cloudinary.com/ninaw/image/upload/v1655489071/satoja_8_rnvb53.png)
 ![](https://res.cloudinary.com/ninaw/image/upload/v1655489072/satoja_9_frb6wz.png)
