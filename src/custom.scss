@@ -1,0 +1,19 @@
+// Override default variables before the import
+// https://getbootstrap.com/docs/4.1/getting-started/theming/#css-variables
+// https://create-react-app.dev/docs/adding-bootstrap/
+
+$body-bg: transparent;
+$body-color: #4b4b4b;
+
+// Colors
+$primary: rgb(0,93,184);
+$secondary: rgb(206,212,218); /* same as form input borders */
+//$dark: rgb(16,25,32);
+//$danger: rgb(255,72,39);
+
+$custom-colors: (
+	"facebook": rgb(66,103,178)
+);
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

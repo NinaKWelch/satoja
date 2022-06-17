@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <title>Tuottajan karttamerkki</title>
+  <rect x="-8" y="9" width="10" height="10" transform="rotate(-45)" fill="rgb(16, 86, 53)"/>
+  <circle cx="8" cy="8" r="8" fill="rgb(16, 86, 53)"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 16 16">
+    <g transform="scale(0.75)">
+      <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path fill="white" fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    </g>
+  </svg>
+</svg>

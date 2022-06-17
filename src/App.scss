@@ -1,0 +1,626 @@
+@import "custom";
+
+/* DESIGN AIDE
+* {
+  border: 1px solid red;
+}
+*/
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  color: #363636;
+  font-size: 100%; /* 16px on default browser settings */
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+h3 a {
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.35rem;
+}
+
+/* hide scroll from number inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* change defaut input background color to white */
+.form-control,
+.form-control:focus  {
+  background-color: rgb(255, 255, 255);
+}
+
+/* lessen rounding borders from cards and buttons */
+.card,
+.btn {
+  border-radius: 0.2rem;
+}
+
+.text-capitalize-first-letter:first-letter {
+  text-transform: capitalize;
+}
+
+/**
+* BACKGROUNDS
+*/
+
+.bg-basic {
+  padding-bottom: 80px;
+  //background-color: rgb(248, 249, 250);
+  background-color: #eeeeee;
+}
+
+.bg-light-blue {
+  padding-bottom: 80px;
+  background-color: rgb(190, 230, 255);
+}
+
+.bg-light-yellow {
+  padding-bottom: 80px;
+  background-color: rgb(255, 250, 193);
+}
+
+.bg-light-green {
+  padding-bottom: 80px;
+  background-color: rgb(178, 255, 187);
+}
+
+.bg-light-purple {
+  padding-bottom: 80px;
+  background-color: rgb(194, 183, 255);
+}
+
+.bg-light-gray {
+  padding-bottom: 80px;
+  background-color: rgb(217, 217, 217);
+}
+
+.bg-dark {
+  background-color: rgb(255,72,39);
+}
+
+.light-green {
+  background-color: rgb(178, 255, 187);
+}
+
+/**
+* BUTTONS
+*/
+
+.btn-success,
+.btn-danger,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-outline-success:hover {
+  border: 1px solid #4b4b4b;
+}
+
+.btn-primary {
+  border: 1px solid #4b4b4b;
+}
+
+.btn-outline-secondary {
+  color: #4b4b4b;
+}
+
+/* TODO: add the same to focus */
+.btn-rounded-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.btn-rounded-top.btn-light-gray.nav-item a.nav-link {
+  background-color: rgb(217, 217, 217);
+}
+
+div.btn-rounded-top.btn-light-gray.nav-item a.nav-link.active {
+  background-color: #fff;
+}
+
+/**
+* BOTTOM NAVBAR
+*/
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .bottom-nav {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+
+/**
+* BOTTOM NAVIGATION / ICON LINKS
+*/
+
+.bottom-nav-item {
+  width: 36px;
+}
+
+a.bottom-nav-link.nav-link {
+  position: relative !important; // necessary for badges
+  padding: 0;
+  color: rgb(22, 22, 22);
+}
+
+a.bottom-nav-link.nav-link:hover,
+a.bottom-nav-link.nav-link.active  {
+  color: gray;
+}
+
+.bottom-nav-link.nav-link svg {
+  margin: 0;
+  padding: 3px;
+  width: 100%;
+  height: auto;
+  fill: rgb(22, 22, 22);
+}
+
+.bottom-nav-link.nav-link:hover svg,
+.bottom-nav-link.nav-link.active svg {
+  fill: gray;
+}
+
+.bottom-nav-link.nav-link span {
+  margin: 0;
+  padding: 0;
+  font-size: 65%;
+}
+
+/* https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/ */
+.back-link {
+  transform: scale(2);
+  fill: rgb(255, 255, 255);
+  filter: drop-shadow(1px 2px 1px rgb(75, 75, 75));
+}
+
+.back-link:hover {
+  fill: rgb(217, 217, 217);
+}
+
+.delete-link {
+  transform: scale(2);
+  fill: red;
+}
+
+.delete-link:hover {
+  fill: rgb(217, 217, 217);
+}
+
+/**
+* CARDS
+*/
+
+.card-body {
+  padding: 0.75rem 0.75rem;
+  cursor: pointer;
+}
+
+/**
+* HOME PAGE
+*/
+
+.bg-field {
+  background-color: rgb(217, 217, 217);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sign-base {
+  position: relative;
+}
+
+.sign {
+  position: relative;
+  z-index: 40;
+}
+
+.sign-right {
+  margin-left: -1.8rem;
+}
+
+.sign-left {
+  margin-right: -1.8rem;
+}
+
+.vertical-line {
+  border-left: 14px solid #000;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -7px;
+  bottom: 0;
+  z-index: 30;
+}
+
+.vertical-line-bottom {
+  height: 50%;
+}
+
+/* PRODUCT LISTS */
+
+.cart-button:hover,
+.cart-button:active,
+.cart-button:focus {
+  background-color: rgb(190, 230, 255);
+}
+
+.light-blue {
+  background-color: rgb(190, 230, 255);
+}
+
+/* CART */
+
+.cart-panel {
+  bottom: 0;
+  padding-bottom: 55px;
+}
+
+/* PRODUCT PAGE */
+
+.product-page-row {
+  height: 100%;
+}
+
+/* NEW HOME PAGE */
+
+.home-page-container {
+  margin-top: 56px;
+}
+
+.home-section-a {
+  background-color: rgb(217, 217, 217);
+  background: url(./media/landscape-background.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-section-a,
+.home-section-b,
+.home-section-c,
+.home-section-d,
+.home-section-e,
+.home-section-f {
+  padding-top: 75px;
+}
+
+.home-section-b,
+.home-section-c,
+.home-section-d,
+.home-section-e {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.home-section-f p {
+  font-size: 1em;
+}
+
+.home-section-f a {
+  color: inherit;
+}
+
+.home-section-f a:hover {
+  color: blue;
+}
+
+.section-aside,
+.home-section-b h3 {
+  padding-top: 35px;
+}
+
+.section-text p,
+.section-aside p,
+.section-aside ul li {
+  font-size: 1em !important;
+}
+
+.card-video {
+  text-align: center;
+}
+
+.video-text h3 {
+  padding-top: 35px;
+}
+
+.card-video figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1em;
+  width: 100%;
+  padding-top: 56.25%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  //object-fit: none; 
+}
+
+.card-pricing, 
+.card-sell,
+.card-buy,
+.card-video iFrame {
+  box-shadow: 0 3px 5px #666;
+  border-radius: 1em;
+  border: 4px solid white;
+  background-color: rgb(248, 249, 250);
+}
+
+.card-pricing {
+  margin-bottom: 2em;
+}
+
+.card-video iFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-sell h5,
+.card-buy h5 {
+  font-size: 1em;
+}
+
+.card-sell p,
+.card-buy p,
+.card-sell ol li,
+.card-buy ol li {
+  font-size: 0.85em;
+  line-height: 1.2em;
+}
+
+/*
+.card-sell {
+  background-color: rgb(255, 250, 193);
+}
+
+.card-buy {
+  background-color: rgb(190, 230, 255);
+}
+*/
+
+.card-list {
+  margin-bottom: 25px;
+  border: none;
+  background: transparent;
+}
+
+.card-text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .home-section-b  {
+    text-align: right;
+  }
+
+  .section-aside,
+  .home-section-b h3 {
+    padding-top: 0;
+  }
+
+  .card-video {
+    text-align: left;
+  }
+
+  .card-sell,
+  .card-buy {
+    margin-bottom: 75px;
+  }
+}
+
+/* NEW LOGIN POPUP */
+
+.modal-login {
+  width: 100vw;
+}
+
+/* HOME PAGE FOOTER */
+
+.home-business h6,
+.home-business p {
+  font-size: 1em;
+}
+
+.home-business a {
+  color: #fff;
+}
+
+.home-business a:hover {
+  color: #ccc;
+}
+
+.button-social {
+  font-size: 32px;
+}
+
+.bg-whatsapp {
+  background-color: rgb(37, 211, 102);
+}
+
+.bg-whatsapp:hover {
+  color: rgb(37, 211, 102);
+  background-color: #fff;
+}
+
+.bg-facebook {
+  background-color: rgb(24, 119, 242);
+}
+
+.bg-facebook:hover {
+  color: rgb(24, 119, 242);
+  background-color: #fff;
+}
+
+.bg-instagram {
+  background-color: rgb(255, 0, 127);
+}
+
+.bg-instagram:hover {
+  color: rgb(255, 0, 127);
+  background-color: #fff;
+}
+
+.bg-youtube {
+  background-color: rgb(255, 0, 0);
+}
+
+.bg-youtube:hover {
+  color: rgb(255, 0, 0);
+  background-color: #fff;
+}
+
+
+/* NEW PRODUCT AND PRODUCER PAGES */
+
+.product-page-image,
+.producer-page-image {
+  max-height: 455px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .product-page-image {
+    max-height: 487px;
+  }
+}
+
+/* NEW PAGE TEMPLATE */
+
+.template-page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* NEW DISCOVERY PAGE */
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.discovery-map-view {
+  transition: padding-bottom;
+  transition-delay: 1s;
+  padding-bottom: 80px;
+}
+
+.discovery-map-view-active {
+  padding-bottom: 0;
+}
+
+.discovery-map {
+  transition: all 1s ease;
+  height: calc(100vh - 80px);
+  margin-top: 0;
+}
+
+.discovery-map-active {
+  transition: all 1s ease;
+  height: calc(100vh - 180px);
+  margin-top: -100px;
+}
+
+.discovery-list {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.discovery-nav-header {
+  //background-color: rgb(255, 250, 193);
+  background-color: #eeeeee;
+}
+
+.discovery-nav-header h2 {
+  font-size: 1.35rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .discovery-nav-header h2 {
+    font-size: 1.55rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .discovery-map-view-active {
+    padding-bottom: 80px;
+  }
+
+  .discovery-map-active {
+    transition: none;
+    height: calc(100vh - 80px);
+    margin-top: 0;
+  }
+}
+
+/* NEW SELLER ORDERS PAGE */
+.tabs-event-orders a.nav-item.nav-link {
+  background-color: #ccc;
+  color: #363636;
+}
+
+.tabs-event-orders a.nav-item.nav-link.active {
+  background-color: #f8f9fa;
+}
+/* BOOTSTRAP BREAK POINTS */
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+//@media (min-width: 1400px) { ... }
